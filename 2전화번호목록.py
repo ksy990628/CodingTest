@@ -1,10 +1,16 @@
 def solution(phone_book):
     answer = True
-    min = 0
-    for i in range(phone_book):
+    phone_book.sort()
+    
+    for i in range(0,len(phone_book)):
+        current = phone_book[i]
+        current_len = len(current)
         for j in range(i+1,len(phone_book)):
-            if (i[0] == j):
+            next = phone_book[j]
+            if current != next[0:current_len]:
+                continue
+            else: 
                 answer = False
-            
-        
+                break
+                    
     return answer
