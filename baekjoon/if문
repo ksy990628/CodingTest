@@ -1,9 +1,39 @@
 1	1330	두 수 비교하기	
+x, y = map(int,input().split())
 
-2	9498	시험 성적	
+if x > y:
+    print('>')
+elif x < y:
+    print('<')
+else:
+    print('==')
+
+
+2	9498	시험 성적
+x = int(input())
+
+if x >= 90:
+    print('A')
+elif x >= 80:
+    print('B')
+elif x >= 70:
+    print('C')
+elif x >= 60:
+    print('D')
+else:
+    print('F')
+
 
 3	2753	윤년 판별	
+year = int(input())
+
+if year%4==0 and (year%100!=0 or year%400==0):
+    print(1)
+else:
+    print(0)
+
 
 4	14681	사분면 고르기
+
 
 5	2884	알람 시계
