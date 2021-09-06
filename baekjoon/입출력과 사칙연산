@@ -26,10 +26,20 @@ print(x*y)
 x, y = map(int, input().split())
 print(x/y)
 
-9	10869	사칙연산	
+9	10869	사칙연산
+x, y = map(int, input().split())
+print(x+y)
+print(x-y)
+print(x*y)
+print(x//y)
+print(x%y)
 
-10	10430	나머지	디버그	87702	158877	56.202%
-네 개의 계산식을 계산하는 문제. 이 문제를 푼 다음에는 직접 입력을 만들어서 넣어 봅시다. 어떤 사실을 관찰할 수 있나요?
+10	10430	네 개의 계산식을 계산하는 문제
+x, y, z = map(int, input().split())
 
-11	2588	곱셈	출처	66610	136369	49.980%
-빈 칸에 들어갈 수는?
+print((x+y)%z)
+print(((x%z)+(y%z))%z)
+print((x*y)%z)
+print((((x%z)*y%z))%z)
+
+11	2588	곱셈
