@@ -1,3 +1,4 @@
+# (아직 미완/ 효율성 검사해야함)
 def solution(phone_book):
     answer = True
     phone_book.sort()
