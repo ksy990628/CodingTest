@@ -51,3 +51,20 @@ else:
 
 
 5	2884	알람 시계
+x,y = map(int,input().split())
+
+new_y = y - 45
+
+if new_y > 0:
+    new_x = x
+elif new_y == 0:
+    new_x = x
+    new_y = 0
+else:
+    new_x = x - 1
+    if new_x < 0:
+        new_x += 24
+    new_y += 60
+
+print(new_x, new_y)
+
