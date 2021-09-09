@@ -12,8 +12,14 @@ for i in range(n):
     print(x+y)
 
 
+3	8393	1~N 합
+x = int(input())
+total = 0
 
-3	8393	합	
+for i in range(x):
+    total += (i+1)
+
+print(total)
 
 
 4	15552	빠른 A+B		
