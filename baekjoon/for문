@@ -25,13 +25,22 @@ print(total)
 4	15552	빠른 A+B		
 
 
-5	2741	N 찍기		
+5	2741	N 찍기
+x = int(input())
+
+for i in range(x):
+    print(i+1)
 
 
 6	2742	기찍 N		
 
 
-7	11021	A+B - 7		
+7	11021	A+B
+n = int(input())
+
+for i in range(n):
+    x,y = map(int,input().split())
+    print("Case #%d: %d" %(i+1,x+y))
 
 
 8	11022	A+B - 8		
