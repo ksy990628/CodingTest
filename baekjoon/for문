@@ -23,6 +23,12 @@ print(total)
 
 
 4	15552	빠른 A+B		
+import sys
+x = int(input())
+
+for i in range(x):
+    a,b = map(int,sys.stdin.readline().split())
+    print(a+b)
 
 
 5	2741	N 찍기
@@ -33,6 +39,10 @@ for i in range(x):
 
 
 6	2742	기찍 N		
+n = int(input())
+
+for i in range(n):
+    print(n-i)
 
 
 7	11021	A+B
@@ -44,9 +54,22 @@ for i in range(n):
 
 
 8	11022	A+B - 8		
+n = int(input())
+
+for i in range(n):
+    x,y = map(int,input().split())
+    print("Case #%d: %d + %d = %d" %(i+1,x,y,x+y))
+
 
 
 9	2438	별 찍기 - 1		
+n = int(input())
+
+for i in range(n):
+    for j in range(i+1):
+        print("*",end='')
+    print()
+        
 
 
 10	2439	별 찍기 - 2		
