@@ -1,1 +1,25 @@
+1	10952	A+B 
+x,y = map(int,input().split())
+
+while x != 0 and y != 0:
+    print(x+y)
+    x,y = map(int,input().split())
+    
+    
+2	10951	A+B (풀이도움)
+while True:
+    try:
+        x,y = map(int,input().split())
+        print(x+y)
+    except:
+        break
+        
+
+3	1110	더하기 사이클		
+
+
+
+
+
+
 
