@@ -1,0 +1,17 @@
+1	11047 동전0
+
+n,k = map(int,input().split())
+coins = []
+for i in range(n):
+    coins.append(int(input()))
+count = 0
+#print(coins)
+
+for i in range(len(coins)-1,-1,-1):
+    if k == 0:
+        break
+    if k % coins[i] != k:
+        count += k // coins[i]
+        k = k % coins[i]
+
+print(count)
