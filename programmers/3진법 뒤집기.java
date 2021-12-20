@@ -1,5 +1,5 @@
 class Solution {
-    public static int solution(int n) {
+    public int solution(int n) {
         int answer = 0;
         int count = 0;
         int standard = 1;
