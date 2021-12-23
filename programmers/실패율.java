@@ -1,5 +1,3 @@
-# 정확도가 왜 70이지...
-
 import java.util.*;
 class Solution {
     public static int[] solution(int N, int[] stages) {
@@ -15,7 +13,8 @@ class Solution {
                 else if (stages[j] > i) break;
             }
             failure[i-1][0] = (double)i;
-            failure[i-1][1] = (double)fail/clear;
+            if (clear == 0) failure[i-1][1] = 0.0;
+            else failure[i-1][1] = (double)fail/clear;
             clear -= fail;
         }
 
@@ -31,17 +30,12 @@ class Solution {
             //System.out.println(failure[i][0].intValue()+" " + failure[i][1]);
             answer[i] = failure[i][0].intValue();
         }
-        //System.out.println(Arrays.toString(answer));
+        System.out.println(Arrays.toString(answer));
         return answer;
     }
     public static void main(String [] args) {
-//        Scanner scanner = new Scanner(System.in);
-//        String input = scanner.nextLine();
-//        char ch = input.charAt(0);
-//        System.out.println((int)ch);
-        //int num = Integer.parseInt(input);
-        int [] arr = {2, 1, 2, 6, 2, 4, 3, 3};
-        System.out.println(solution(5,arr));
+        int [] arr = {1,2,3,4,5,6,7};
+        System.out.println(solution(8,arr));
         }
 }
 
