@@ -158,5 +158,45 @@ for i in range(n):
 
 
 6	    1021	    회전하는 큐		
+import sys
+from collections import deque
+
+def min_value(a,b):
+    mini = 9999
+    if a<b:
+        mini = a
+    else:
+        mini = b
+
+n,m = map(int,sys.stdin.readline().split())
+queue = deque([i+1 for i in range(n)])
+request = deque(list(map(int,input().split())))
+count = 0
+#print(queue, request)
+
+while len(request) != 0:
+    target = request[0]
+    if queue[0] == target:
+        request.popleft()
+        queue.popleft()
+    else:  # queue[0] != target
+        location = queue.index(target)
+        cmp1 = (len(queue)-location)
+        cmp2 = location
+        move_count = min(cmp1,cmp2)
+
+        if move_count == cmp1:
+            for i in range(move_count):
+                queue.appendleft(queue[-1])
+                queue.pop()
+                count += 1
+        else:
+            for i in range(move_count):
+                queue.append(queue[0])
+                queue.popleft()
+                count += 1
+            
+
+print(count)
 
 7	    5430	    AC
