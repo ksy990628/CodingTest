@@ -49,3 +49,13 @@ while len(queue) != 1:
     queue.popleft()
 
 print(queue[0]+1)
+
+3	    11866	    요세푸스 문제 0		
+
+4	    1966	    프린터 큐	
+
+5	    10866	    덱   	
+
+6	    1021	    회전하는 큐		
+
+7	    5430	    AC
