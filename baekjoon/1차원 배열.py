@@ -1,4 +1,4 @@
-1	10818	최소, 최대		
+#1	10818	최소, 최대		
 x = int(input())
 arr = input().split()
 new_arr = []
@@ -9,7 +9,7 @@ for i in range(x):
 print(min(new_arr),max(new_arr))
 
 
-2	2562	최댓값
+#2	2562	최댓값
 arr = []
 for i in range(9):
     x = int(input())
@@ -19,7 +19,7 @@ print(max(arr))
 print(arr.index(max(arr))+1)
 
 
-3	2577	숫자의 개수	
+#3	2577	숫자의 개수	
 result = 1
 numArr = [0 for i in range(10)]
 
@@ -55,7 +55,7 @@ for i in range(len(numArr)):
     print(numArr[i])
 
 
-4	3052	나머지	
+#4	3052	나머지	
 m_arr = []
 
 for i in range(10):
@@ -67,7 +67,7 @@ for i in range(10):
 print(len(m_arr))
 
 
-5	1546	평균	
+#5	1546	평균	
 x = int(input())
 arr = input().split()
 new_arr = []
@@ -78,7 +78,7 @@ for i in range(x):
 print((sum(new_arr)/max(new_arr))*100/x)
 
 
-6	8958	OX퀴즈
+#6	8958	OX퀴즈
 x = int(input())
 
 for i in range(x):
@@ -95,7 +95,7 @@ for i in range(x):
     print(total)
         
 
-7	4344	평균은 넘겠지	
+#7	4344	평균은 넘겠지	
 x = int(input())
 
 for i in range(x):
