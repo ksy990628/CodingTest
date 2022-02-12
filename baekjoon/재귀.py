@@ -26,3 +26,22 @@ print(fibo(n))
 
 
 #4	  11729	  하노이 탑 이동 순서		
+n = int(input())
+count = 0
+arr = []
+
+def hanoi(n,a,b,c):
+    global count
+    count += 1
+    if n == 1:
+        arr.append([a,c])
+    else:
+        hanoi(n-1,a,c,b)
+        arr.append([a,c])
+        hanoi(n-1,b,a,c)
+    
+    
+hanoi(n,1,2,3)
+print(count)
+for i in range(count):
+    print(arr[i][0],arr[i][1])
