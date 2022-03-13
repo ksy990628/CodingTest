@@ -1,0 +1,22 @@
+n = int(input())
+
+for i in range(n):
+    PS = input()
+    left, status = 0, 0
+    
+    for j in PS:
+        if j == "(":
+            left += 1
+            
+        elif j == ")":
+            if left > 0:
+                left -= 1
+            else:
+                status = 1
+                break
+            
+    if left > 0:
+        status = 1
+
+            
+    print("YES") if status == 0 else print("NO") 
