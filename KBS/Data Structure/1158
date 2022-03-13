@@ -1,0 +1,27 @@
+from collections import deque
+
+n, k = map(int,input().split())
+queue = deque([i+1 for i in range(n)])
+#queue = [i+1 for i in range(n)]
+
+j = 0
+arr = [] 
+
+
+print("<",end="")
+while len(queue) > 0:
+    j += 1
+    if j == k:
+        j = 0
+        print(queue[0],end="")
+        queue.popleft()
+        if len(queue) != 0:
+            print(",",end=" ")
+
+    else:
+        queue.append(queue[0])
+        queue.popleft()
+
+
+print(">")
+
