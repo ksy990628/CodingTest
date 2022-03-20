@@ -1,0 +1,15 @@
+import sys
+n,k = map(int,sys.stdin.readline().split())
+arr = []
+cnt = 0
+
+for _ in range(n):
+    arr.append(sys.stdin.readline().split())
+
+for _ in range(k):
+    iput = sys.stdin.readline().split()
+    if iput in arr:
+        cnt += 1
+
+
+print(cnt)
