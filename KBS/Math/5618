@@ -1,0 +1,29 @@
+def gcd(a,b):
+    if a<b:
+        tmp = a
+        a = b
+        b = tmp
+    while b!=0:
+        tmp = a%b
+        a = b
+        b = tmp
+    return a
+
+import sys
+n = int(sys.stdin.readline().rstrip())
+
+if n == 2:
+    a,b = map(int,sys.stdin.readline().rstrip().split())
+    result = gcd(a,b)
+else:
+    arr = list(map(int,sys.stdin.readline().rstrip().split()))
+    arr.sort()
+    a = arr[0]
+    b = arr[1]
+    result = gcd(a,b)
+
+
+for i in range(1,result+1):
+    if result % i == 0:
+        print(i) 
+    
