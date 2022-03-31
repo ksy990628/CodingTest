@@ -1,3 +1,11 @@
+n = int(input())
+if n % 2 == 0:
+    print("CY")
+else:
+    print("SK")
+
+'''
+# 이것두 맞음 굳이 dp 쓴건디..
 import sys
 n = int(sys.stdin.readline().strip())
 
@@ -17,7 +25,7 @@ for i in range(1,n+1):
         else:
             print('SK')
         break
-
+'''
         
 '''        
 # 이것두 맞음
