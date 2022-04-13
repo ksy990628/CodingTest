@@ -1,11 +1,15 @@
 import sys
 
 input = sys.stdin.readline
-
 n = int(input())
 p = n * n
+
+# 교실 반 배정
 classroom = [[0] * n for _ in range(n)]
+
+# 선호 학생 배열
 like_room = [[] for _ in range(p+1)]
+
 dx = [0, 0, 1, -1]
 dy = [1, -1, 0, 0]
 
@@ -13,9 +17,13 @@ for _ in range(p):
     array = list(map(int, input().split()))
     like = array[1:]
     like_room[array[0]] = like
+    
+    # 제일 첫번째 학생의 경우, 무조건 [1][1] 좌석으로 배정
     if p == 0:
         classroom[1][1] = array[0]
         continue
+        
+        
     temp = []
     for i in range(n):
         for j in range(n):
