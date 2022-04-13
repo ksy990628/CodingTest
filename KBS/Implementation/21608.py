@@ -30,6 +30,7 @@ for _ in range(p):
             sum_like, sum_empty = 0, 0
             if classroom[i][j] != 0:
                 continue
+            # 상하좌우
             for k in range(4):
                 nx = i + dx[k]
                 ny = j + dy[k]
