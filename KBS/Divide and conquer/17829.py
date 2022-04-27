@@ -17,7 +17,7 @@ def pooling(arr,n):
             # new_arr[i//2] 에 저장해줘야한다는 부분을 생각 못함
             new_arr[i//2].append(li[2])
     # 재귀형식으로 다시 
-    return pulling(new_arr,n//2)
+    return pooling(new_arr,n//2)
 
 print(pooling(arr,n))
         
