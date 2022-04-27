@@ -4,7 +4,7 @@ arr = []
 for _ in range(n):
     arr.append(list(map(int,sys.stdin.readline().strip().split())))
 
-def pulling(arr,n):
+def pooling(arr,n):
     if n == 1:
         return arr[0][0]
     
@@ -19,5 +19,5 @@ def pulling(arr,n):
     # 재귀형식으로 다시 
     return pulling(new_arr,n//2)
 
-print(pulling(arr,n))
+print(pooling(arr,n))
         
