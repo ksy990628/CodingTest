@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(10**9)
+
 def countTree(x):
     count[x]=1
     for i in arr[x]:
@@ -7,7 +10,7 @@ def countTree(x):
         
 
 
-import sys
+
 n,r,q = map(int,sys.stdin.readline().rstrip().split())
 arr = [[]for _ in range(n+1)]
 count = [0]*(n+1)
