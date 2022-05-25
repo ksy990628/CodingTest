@@ -14,7 +14,7 @@ def dfs(queen, n, row):
             if queen[x] == queen[row]:
                 break
 
-            # 대각선으로 겹치면 안됨
+            # 대각선으로 겹치면 안됨, 1의 차이가 나면 대각선인 관계인 것임
             if abs(queen[x] - queen[row]) == (row - x):
                 break
         else:
