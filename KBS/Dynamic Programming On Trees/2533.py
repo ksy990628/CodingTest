@@ -26,8 +26,9 @@ def dfs(start):
         for i in c[start]:
             if visited[i] == 0:
                 dfs(i)
-                # 부모가 얼리어답터인 경우, 최소 얼리어답터의 수?
+                # 부모가 얼리어답터인 경우, 자식이 얼리어답터인 경우와 자식이 얼리어답터가 아닌 경우 중 최소
                 dp[start][1] += min(dp[i][0] , dp[i][1])
+                # 부모가 얼리어답터가 아닌 경우, 자식은 얼리어답터이어야 함
                 dp[start][0] += dp[i][1]
         dp[start][1] += 1
 
