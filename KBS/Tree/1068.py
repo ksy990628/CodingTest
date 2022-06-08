@@ -17,6 +17,7 @@ leaf_node_num = 0
 dfs(removed_node)
 
 for i in range(len(arr)):
+    # 죽은 노드가 아님 and 부모역할을 하는 노드가 아님
     if arr[i] != -2 and i not in arr:
         leaf_node_num += 1
 print(leaf_node_num)
