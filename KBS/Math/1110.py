@@ -15,3 +15,24 @@ while True:
         break
     
 print(ans)
+
+
+
+# 예전에 푼 거
+x = int(input())
+y = x
+cycle = 0
+
+while True:
+    cycle = cycle+1
+
+    first = y//10
+    second = y%10
+    temp = first + second
+    if temp>=10:
+        temp = temp%10
+    y = second*10 + temp
+    if y==x:
+        break        
+
+print(cycle)
