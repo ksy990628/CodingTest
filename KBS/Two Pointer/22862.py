@@ -10,6 +10,7 @@ flag = 1                # end가 n-1이 되면 더이상 end += 1 작업을 할 
 
 for start in range(n):
     while cnt <= k and flag:
+        # 홀수
         if lst[end] % 2:
             if cnt == k:
                 break
