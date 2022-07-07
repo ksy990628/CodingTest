@@ -4,7 +4,9 @@ arr = []
 
 for i in range(n):
     arr.append(int(sys.stdin.readline().rstrip()))
- 
+
+# 0 ~ i까지 오름차순으로 부분 수열의 원소 갯수
+# [3,7,5,2,6,1,4] => dp = [1,2,2,1,3,1,2]
 dp = [0 for i in range(n)]
 dp[0]=1
 
