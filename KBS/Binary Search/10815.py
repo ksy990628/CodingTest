@@ -1,3 +1,5 @@
+# Python은 통과, Pypy3는 메모리초과...
+
 import sys
 sys.setrecursionlimit(10**6)
 
