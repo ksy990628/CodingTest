@@ -14,8 +14,10 @@ def binary_search():
             if i - mid >= 0:
                 total_length += i - mid
 
+        # 필요한 나무의 길이보다 자른 나무의 양이 적을 때
         if total_length < M:
             end = mid - 1
+        # 필요한 나무의 길이가 충족 및 이상일 때
         else:
             start = mid + 1
     ans = end
