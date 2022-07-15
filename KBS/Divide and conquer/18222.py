@@ -33,7 +33,7 @@ def thue_morse(idx: int) -> int:
 
     val = 0
     while x > 0:
-        if idx >= 2 ** x:
+        if idx >= 2 ** x:  # 뒤집어 질 수 있는 구간임을 구분
             val ^= 1       # 결과 0과 1중 하나를 구분
             idx %= 2 ** x. # idx와 가장 가끼운 2의 제곱 수와의 차이
         x -= 1
