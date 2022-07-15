@@ -29,16 +29,16 @@ def thue_morse(idx: int) -> int:
     if idx == 0:
         return 0
 
-    x = int(log(idx,2))  #float type
+    x = int(log(idx,2))  #float type, idx와 가장 가까운 2의 제곱을 찾음
 
     val = 0
     while x > 0:
         if idx >= 2 ** x:
-            val ^= 1
-            idx %= 2 ** x
+            val ^= 1       # 결과 0과 1중 하나를 구분
+            idx %= 2 ** x. # idx와 가장 가끼운 2의 제곱 수와의 차이
         x -= 1
 
-    return [val, val ^ 1][idx == 1]
+    return [val, val ^ 1][idx == 1]. # 배열 [0,1] 또는 [1,0]에서 1번 인덱스 값을 반환
 
 
 k = int(stdin.readline())
