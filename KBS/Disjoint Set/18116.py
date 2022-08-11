@@ -36,3 +36,17 @@ for _ in range(n):
         x = int(a[1])
         y = find(x)
         print(set_size[y])
+        
+'''
+10
+I 1 2
+I 3 2
+Q 1
+Q 4
+I 3 4
+Q 4
+I 8 9
+I 7 9
+Q 7
+Q 8
+'''
