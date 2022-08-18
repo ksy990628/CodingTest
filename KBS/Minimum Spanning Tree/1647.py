@@ -1,3 +1,6 @@
+# 참고 블로그
+# https://woongsin94.tistory.com/405
+
 import sys
 input = sys.stdin.readline
 n, m = map(int,input().split())
