@@ -1,3 +1,4 @@
+# 직접 풀었다는 게 굉장히 뿌듯...
 import sys
 input = sys.stdin.readline
 n, m = map(int,input().split())
