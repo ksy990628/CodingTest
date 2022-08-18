@@ -30,7 +30,7 @@ def union_parent(parent, a_p, b_p):
 
 # MST 생성
 for edge in edges:
-    # 다채우면 종료
+    # 다채우면 종료, 제일 cost가 많이 나가는 간선 하나를 제외
     if edge_cnt + 2 == n:
         break
 
